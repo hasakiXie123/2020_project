@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block mainContent %}
+
+{% if id==2 %}
+    <pre class="information">
+        {{answer}}
+    </pre>
+{% else	%}
+    <p class="information">
+        {{answer}}
+    </p>
+{% endif %}
+
+{% if id==1 %}
+<img alt="commitNumber" class="pic" src="{{ url_for('static', filename='image/NumberofParticipantsPerYear.png') }}" title="NumberofParticipantsPerYear">
+{% endif %}
+
+{% endblock %}

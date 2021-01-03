@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block mainContent %}
+
+<img alt="result" class="pic" src="{{ url_for(endpoint='static', filename=imgPath) }}" title="commitNumber">
+<table class="gitTable">
+<tr>
+<th> date </th>
+<th> author </th>
+<th> message </th>
+</tr>
+    {% for gitItem in gitInfos %}
+        <tr>
+            <td>{{ gitItem.date }}</td>
+            <td>{{ gitItem.author }}</td>
+            <td>{{ gitItem.message }}</td>
+        </tr>
+    {% endfor %}
+</table>
+
+{% endblock %}
