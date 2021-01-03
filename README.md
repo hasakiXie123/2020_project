@@ -1,8 +1,8 @@
-# Visual_Analysis_of_PyTorch
-## Visual_Analysis_of_PyTorch是什么?
+# Visual Analysis of PyTorch
+## Visual Analysis of PyTorch是什么?
 对PyTorch的相关git数据进行统计、分析以及可视化的开源网页项目。
 
-## Visual_Analysis_of_PyTorch有哪些功能？
+## Visual Analysis of PyTorch有哪些功能？
 
 * 数据搜索
     *  帮助用户更加精确地搜索关于PyTorch的具体提交历史数据
