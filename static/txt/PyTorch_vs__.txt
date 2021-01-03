@@ -1,0 +1,19 @@
+现在可以同PyTorch比肩的框架有Keras和Tensorflow，他们的对比如下：
+1、灵活性
+Keras：使用标准层即插即用更容易学习和实验；
+PyTorch：提供了较低层次的接口，并且构建动态计算图实行深度学习计算，对数学基础较为薄弱的用户比较友好。
+Tensorflow：构建静态计算图实行深度学习计算，CPU和GPU之间的数据参数很难移植和调试。
+2、可用RNN类型
+PyTorch：PyTorch提供2种不同层次的类别（class）用于构建循环网络：
+· 多层次类别（Multi-layer classes），包括nn.RNN、nn.GRU和nn.LSTM。这些类别可用于表示深度双向循环神经网络。
+· 单元层类别（Cell-level classes），包括nn.RNNCell、nn.GRUCell和nn.LSTMCell。这些类别可用于表示单个单元。
+TensorFlow：TensorFlow提供tf.nn.rnn_cell模块用于构建标准RNN。tf.nn.rnn_cell模块中最重要的类别包括：
+· 单元层类别（Cell level classes）：用于定义RNN的单个单元，即BasicRNNCell、GRUCell和LSTMCell。
+· 多RNN单元类别（MultiRNNCell class）：用于堆栈多个单元，以创建深度RNN。
+· 随机失活包装类别（DropoutWrapper class）：用于执行dropout正则化。
+Keras：Keras库提供的循环层包括：
+· 简单RNN——全连接RNN，其输出被反馈到输入中
+· GRU——门控循环单元层
+· LSTM——长短时记忆层
+3、社区规模
+和PyTorch相比，TensorFlow更加成熟，其社区规模比PyTorch和Keras的社区规模加起来还要大得多，用户基数的增长也比PyTorch和Keras要快。

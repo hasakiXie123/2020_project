@@ -1,0 +1,1 @@
+2017年1月，由Facebook人工智能研究院（FAIR）基于Torch推出了PyTorch。Torch是一个基于BSD License的开源的机器学习的框架，早在2002年就发布了Torch的初版。PyTorch底层和Torch框架一样，但是使用Python重新写了很多内容，不仅更加灵活，支持动态图，而且提供了Python接口。
